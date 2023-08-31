@@ -1,0 +1,14 @@
+server:
+  port: 8201
+
+spring:
+  application:
+    name: springcloud-provider-dept
+
+eureka:
+  client:
+    service-url:
+      # 注册中心地址7001-7003
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: springcloud-provider-dept-8201 #修改Eureka上的默认描述信息
